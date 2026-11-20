@@ -1,11 +1,11 @@
 [
- {"capability":"code","source":"GitHub evolon87-art/banquet-bites-decision-wheel (all routes, components, public/menu photos, assets, tests, cark.html, Vercel/Netlify config, roadmap)","outcome":"copy","status":"verified","next_action":"none"},
- {"capability":"schema","source":"menu_categories, menu_items, menu_reviews, guest_comments, wheel_settings, wheel_wins, wheel_spins, wheel_ip_spins, wheel_claims, admin_pin_attempts, social_accounts, spin_wheel(), spin_wheel_guest()","outcome":"migrate","status":"verified","next_action":"none"},
- {"capability":"records","source":"Repo migrations: 11 categories, 53 items, wheel defaults, social account rows","outcome":"migrate","status":"verified","next_action":"none"},
- {"capability":"live records not in repo","source":"Edits, guest comments, prize codes and social links stored in the old backend after the repo snapshot","outcome":"migrate","status":"pending","next_action":"User exports from old project if needed"},
- {"capability":"real photos for 10 items","source":"Migration 0003 pointed to image files hosted only in the old project","outcome":"re-upload","status":"pending","next_action":"Items keep their bundled photos; user can upload replacements from the dashboard"},
+ {"capability":"code","source":"GitHub lalahkgkhh-art/banquet-bites-decision-wheel: all routes, components, public/menu photos, assets, tests, cark.html, Vercel/Netlify config, roadmap, AGENTS.md","outcome":"copy","status":"verified","next_action":"none"},
+ {"capability":"schema","source":"drizzle/migrations 0000: menu_categories, menu_items, menu_reviews, guest_comments, wheel_*, admin_pin_attempts, social_accounts, spin_wheel(), spin_wheel_guest()","outcome":"migrate","status":"verified","next_action":"none"},
+ {"capability":"records","source":"drizzle/migrations 0001 + 0000 seeds: 11 categories, 53 items, wheel defaults, 3 social rows","outcome":"migrate","status":"verified","next_action":"none"},
+ {"capability":"live records not in repo","source":"Edits, guest comments, prize codes, social links stored only in the old backend","outcome":"migrate","status":"pending","next_action":"User exports CSV/JSON from the old project if needed"},
+ {"capability":"uploaded photos in old storage","source":"Old private menu-photos bucket files","outcome":"migrate","status":"pending","next_action":"Repo items use bundled photos; re-upload any custom photos from the dashboard"},
  {"capability":"auth","source":"None (passwordless dashboard)","outcome":"not needed","status":"accepted","next_action":"none"},
- {"capability":"file storage","source":"Private menu-photos bucket","outcome":"migrate","status":"verified","next_action":"Bucket created"},
- {"capability":"QR cutover","source":"QR hidden in editor until published","outcome":"cutover","status":"pending","next_action":"Publish; QR then targets <published>/menu"},
- {"capability":"verification","source":"tests 36/36, dashboard, guest menu, wheel config + spin","outcome":"verify","status":"verified","next_action":"none"}
+ {"capability":"file storage","source":"Private menu-photos bucket","outcome":"migrate","status":"verified","next_action":"none"},
+ {"capability":"QR cutover","source":"QR targets <published>/menu","outcome":"cutover","status":"pending","next_action":"Publish this project; reprint QR codes if the address changes"},
+ {"capability":"verification","source":"tests 40/40, dashboard, guest menu, wheel config + spin, photos","outcome":"verify","status":"verified","next_action":"none"}
 ]
